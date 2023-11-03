@@ -32,17 +32,32 @@ const Login1 = styled('div')({
   overflow: `hidden`,
 });
 
-const Authentication51 = styled(Authentication5)(({ theme }) => ({
-  width: `375px`,
+const Quest = styled('div')({
+  borderRadius: `0px`,
+  display: `flex`,
   position: `absolute`,
+  isolation: `isolate`,
+  flexDirection: `column`,
+  justifyContent: `flex-start`,
+  alignItems: `flex-start`,
+  padding: `0px`,
+  boxSizing: `border-box`,
   left: `27px`,
   top: `20px`,
+  overflow: `hidden`,
+});
+
+const Authentication51 = styled(Authentication5)(({ theme }) => ({
+  width: `375px`,
+  margin: `0px`,
 }));
 
 function Login(props) {
   return (
     <Login1 className={props.className}>
-      <Authentication51 />
+      <Quest>
+        <Authentication51 />
+      </Quest>
     </Login1>
   );
 }
