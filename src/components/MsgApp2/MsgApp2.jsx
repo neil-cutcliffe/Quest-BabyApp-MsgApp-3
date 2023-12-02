@@ -46,6 +46,7 @@ const Quest = styled('div')({
   width: `430px`,
   left: `0px`,
   top: `0px`,
+  overflow: `hidden`,
 });
 
 const GridFrame = styled('div')({
